@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>博客首页</title>
+</head>
+<body>
+    <div class="header">
+        <a href="/signup.html">注册</a>
+    </div>
+    <div class="body">
+      <ul>
+          {% for book in booklist %}
+              <li><a href="/{{ book.id }}/">{{ book.title }}</a>---{{book.pub_data}}</li>
+          {% endfor %}
+      </ul>
+    </div>
+    <div class="footer">
+
+    </div>
+</body>
+</html>
